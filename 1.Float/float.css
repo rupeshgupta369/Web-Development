@@ -1,0 +1,35 @@
+.header{
+    background-color: brown;
+    height: 20px;
+    border: solid blue 2px;
+}
+
+.container{
+    border: solid black 3px;
+    /* overflow: hidden; this can solve the problem but not recommended */
+}
+
+.childconatiner{
+    background-color: chocolate;
+    border: solid green;
+    width: 70px;
+    margin: 1px;
+    float: left;
+}
+
+/* .faltu{
+    clear: both;
+} */
+
+.footer{
+    background-color: darkblue;
+    height: 20px;
+    border: solid red 2px;
+}
+
+.container::after{
+    content:"" ;
+    display: block;
+    clear: both;
+    *zoom:1;
+}
